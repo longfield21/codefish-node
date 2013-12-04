@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+    <style>
+      * { margin: 0; padding: 0 }
+
+      body {
+        font-size: 17px;
+      }
+      body > header {
+        font-family: courier, monospace;
+        float: right;
+        padding: 10px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      footer {
+        font-family: courier, monospace;
+        text-align: center;
+        margin: 0 auto;
+        padding: 30px;
+      }
+      footer .copy {
+        font-size: 11px;
+      }
+      footer p {
+        margin: 5px 0;
+      }
+      ul li {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .post {
+        padding-top: 90px;
+      }
+      .post p:first-child {
+        margin-top: 0;
+      }
+      .post .body, .post header {
+        font-family: "Times New Roman", Times, serif;
+        width: 640px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .post .body, .post code, .post h2, footer a {
+        font-size: 17px;
+        line-height: 1.3em;
+      }
+      .post .date {
+        display: block;
+        padding: 10px 0;
+        font-size: 11px;
+      }
+      .post .date, .post blockquote {
+        color: #777;
+      }
+      .post blockquote {
+        font-style: italic;
+      }
+      .post pre {
+        margin-left: 10px;
+      }
+      .post code {
+        font-family: courier, monospace;
+      }
+      .post p {
+        margin: 1.5em 0;
+      }
+      .post h1 {
+        font-size: 19px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">longfield21.github.io</a></h1>
+    </header>
+    <article class="post">
+      <header>
+        <h1><%= title %></h1>
+        <span class="date"><%= date %></span>
+      </header>
+      <section class="body">
+        <%= body %>
+      </section>
+    </article>
+    <footer>
+      <p>follow me <a href="http://twitter.com/longfield21">@longfield21</a></br />
+      <a href="mailto:o8974538551@gmail.com">get in touch</a></p>
+      <p class="copy">&copy; 2013 longfield21.github.io</p>
+    </footer>
+  </body>
+</html>
