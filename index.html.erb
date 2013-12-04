@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>longfield21</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: courier, monospace;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      body > header {
+        float: right;
+      }
+
+      section > header {
+        margin-bottom: 10px;
+      }
+
+      section > header > h2 {
+        font-size: 20px;
+      }
+
+      footer {
+        text-align: right;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 11px;
+      }
+
+      footer a {
+        font-size: 17px;
+      }
+
+      li {
+        margin: 5px 0;
+      }
+
+      li .date {
+        float: right;
+        color: #999;
+      }
+
+      ul li {
+        list-style-type: none;
+      }
+
+      section p {
+        margin: 30px 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">longfield21.github.io</a>/log</h1>
+    </header>
+    <section>
+      <header>
+        <h2>articles</h2>
+      </header>
+      <ul>
+        <% articles.each do |a| %>
+          <li><a href="<%= a.path %>"><%= a.title %></a><span class="date"><%= a.date %></li>
+        <% end %>
+      </ul>
+    </section>
+    <footer>
+      <a href="mailto:o8974538551@gmail.com">get in touch</a>
+      <p>&copy; 2013 longfield21.github.io</p>
+    </footer>
+  </body>
+</html>
